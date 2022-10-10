@@ -4,7 +4,7 @@ import { useAppThemeContext } from '../shared/contexts';
 
 export const AppRoutes = () => {
 
-  const { toggleTheme } = useAppThemeContext()
+  const { toggleTheme } = useAppThemeContext();
 
   return (
     <Routes>
@@ -12,4 +12,4 @@ export const AppRoutes = () => {
       <Route path='*' element={<Navigate to='/pagina-inicial' />} />
     </Routes>
   );
-}
+};
